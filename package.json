@@ -1,5 +1,5 @@
 {
-  "name": "react-life",
+  "name": "react-game-of-life",
   "version": "1.0.0",
   "description": "Conway's Game of Life with React JS",
   "main": "Gruntfile.js",
@@ -19,7 +19,6 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-karma": "^0.12.1",
     "grunt-template-jasmine-istanbul": "^0.4.0",
-    "karma": "^0.13.19",
     "reactify": "^1.1.1"
   },
   "dependencies": {
