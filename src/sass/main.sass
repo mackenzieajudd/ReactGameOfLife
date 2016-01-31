@@ -11,6 +11,7 @@
     border-radius: 2px
     border: 1px solid black
     display: inline-block
+    transition: background-color 0.1s
     
 .cellRow
     line-height: 0
@@ -20,11 +21,20 @@
 .board
     display: inline-block
     
-.controlBar, .mainTitle, .littleTitle
+#boardContainer
+    overflow: scroll
+    width: 100%
+    height: calc(100vh - 70px)
+    
+.mainTitle, .littleTitle, .ticksDisplay
     display: inline-block
+    
+.controlBar
+    height: 70px
 
 .littleTitle
     margin-left: 10px
+    margin-right: 20%
     
 .controlButton
     float: right

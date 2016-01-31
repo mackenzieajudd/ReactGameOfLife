@@ -12,9 +12,10 @@ var ControlBar = React.createClass({
     }
     
     return (
-        <div className="ControlBar">
+        <div className="controlBar">
             <h1 className="mainTitle">React Game of Life</h1>
             <small className="littleTitle">By MacKenzie Judd</small>
+            <h3 className="ticksDisplay">Ticks: {this.props.ticks}</h3>
             {controlFlowButton}
         </div>
     );

@@ -17,6 +17,7 @@ var Board = React.createClass({
     if(this.props.shouldTick){
         var lifeBoard = this.state.lifeBoard;
         lifeBoard.tick();
+        this.props.registerTick();
         this.setState({lifeBoard: lifeBoard});
     }
 
