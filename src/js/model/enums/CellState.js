@@ -1,6 +1,6 @@
 var CellState = {
-    alive: "Alive",
-    dead: "Dead"
+    alive: "alive",
+    dead: "dead"
 };
 
 module.exports = CellState;

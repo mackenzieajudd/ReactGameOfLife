@@ -1,4 +1,5 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var ReactGameOfLife = require('./components/ReactGameOfLife');
 
-ReactDOM.render(<Calculator/>, document.getElementById('myDiv'));
+ReactDOM.render(<ReactGameOfLife/>, document.getElementById('reactGameOfLifeDiv'));

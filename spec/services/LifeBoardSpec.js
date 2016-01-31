@@ -46,6 +46,17 @@ describe('LiveBoard', function(){
         });
     });
     
+    describe('makeAlive', function(){
+        it('should make cell alive', function(){
+            var boardUnderTest = new LifeBoard(1, 1, []);
+            
+            boardUnderTest.makeAlive({x: 0, y: 0});
+            var board = boardUnderTest.getBoard();
+            
+            expect(board[0][0].state).toEqual(CellState.alive);
+        });
+    });
+    
     describe('tick', function(){
         it('should bring cell to life', function(){
             

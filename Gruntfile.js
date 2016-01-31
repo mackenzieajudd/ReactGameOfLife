@@ -45,7 +45,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['dest/**/*.js']
+          'dist/<%= pkg.name %>.min.js': ['dest/app.js']
         }
       }
     },
@@ -122,6 +122,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('dist', ['browserify', 'uglify']);
+  grunt.registerTask('dist', ['jshint', 'browserify', 'jasmine', 'uglify', 'sass']);
   grunt.registerTask('test', ['browserify', 'jasmine']);
 };

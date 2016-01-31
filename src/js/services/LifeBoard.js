@@ -76,6 +76,10 @@ var LifeBoard = function(xSize, ySize, liveCoordinates){
         board = tempBoard;
     };
     
+    this.makeAlive = function(coordinates){
+        board[coordinates.x][coordinates.y] = liveCell;
+    };
+    
     function copyBoard(board){
         var boardCopy = [];
         for(var i = 0; i < board.length; i++){
