@@ -14,17 +14,17 @@ var Board = React.createClass({
     this.doTick();
   },
   doTick: function(){
+    var that = this;
+    setTimeout(function(){
+        that.doTick();
+    }, this.props.period);
+    
     if(this.props.shouldTick){
         var lifeBoard = this.state.lifeBoard;
         lifeBoard.tick();
         this.props.registerTick();
         this.setState({lifeBoard: lifeBoard});
     }
-
-    var that = this;
-    setTimeout(function(){
-        that.doTick();
-    }, this.props.period);
   },
   makeAlive: function(coordinates){
     var lifeBoard = this.state.lifeBoard;

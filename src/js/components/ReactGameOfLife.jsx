@@ -28,7 +28,7 @@ var ReactGameOfLife = React.createClass({
   render: function() {
     return (
         <div>
-            <ControlBar paused={this.state.paused} play={this.play} pause={this.pause} setPeriod={this.setPeriod} ticks={this.state.ticks}/>
+            <ControlBar paused={this.state.paused} play={this.play} pause={this.pause} setPeriod={this.setPeriod} period={this.state.period} ticks={this.state.ticks} periodIncrement={20}/>
             <div id="boardContainer">
                 <Board xSize="100" ySize="50" period={this.state.period} shouldTick={!this.state.paused} registerTick={this.registerTick}/>
             </div>
